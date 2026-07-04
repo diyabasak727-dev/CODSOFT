@@ -2,63 +2,65 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    font-family:Arial,sans-serif;
 }
 
 body{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    background:#1e1e2f;
+    background:#f4f4f4;
+    color:#333;
+    text-align:center;
 }
 
-.calculator{
-    background:#2d2d44;
-    padding:20px;
-    border-radius:15px;
-    box-shadow:0 0 15px rgba(0,0,0,0.5);
-    width:320px;
-}
-
-#display{
-    width:100%;
-    height:60px;
-    border:none;
-    outline:none;
-    font-size:28px;
-    text-align:right;
-    padding:10px;
-    margin-bottom:15px;
-    border-radius:10px;
-    background:#fff;
-}
-
-.buttons{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:10px;
-}
-
-button{
-    height:60px;
-    font-size:20px;
-    border:none;
-    border-radius:10px;
-    cursor:pointer;
-    background:#4b4b6b;
+header{
+    background:linear-gradient(135deg,#4CAF50,#2E8B57);
     color:white;
+    padding:100px 20px;
 }
 
-button:hover{
-    background:#666699;
+header h1{
+    font-size:48px;
+    margin-bottom:20px;
 }
 
-.equal{
-    grid-column:span 2;
-    background:#ff9800;
+header p{
+    font-size:20px;
+    margin-bottom:30px;
 }
 
-.equal:hover{
-    background:#e68900;
+.btn{
+    display:inline-block;
+    padding:12px 30px;
+    background:white;
+    color:#2E8B57;
+    text-decoration:none;
+    border-radius:5px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#ddd;
+}
+
+section{
+    padding:60px 20px;
+}
+
+section h2{
+    font-size:35px;
+    margin-bottom:20px;
+}
+
+section p{
+    font-size:18px;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+footer{
+    background:#222;
+    color:white;
+    padding:20px;
+    margin-top:40px;
 }
